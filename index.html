@@ -2,15 +2,24 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <!-- Permite que la página se adapte al ancho de celulares y tabletas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consulta el menú de Chili Clover, sus promociones y cómo hacer tu pedido.">
     <title>Chili Clover | ¡Que la suerte te traiga aquí!</title>
+
     <!-- Conectamos la hoja de estilos que controla la apariencia de la página -->
     <link rel="stylesheet" href="estilos.css">
+
+    <!-- Tipografías elegidas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Encabezado principal: logotipo, nombre y menú de navegación -->
     <header class="encabezado" id="inicio">
         <a class="marca" href="#inicio" aria-label="Ir al inicio de Chili Clover">
-            <!-- Emblema provisional-->
+            <!-- Sustituir este emblema provisional por el logotipo oficial del negocio -->
             <span class="marca-icono" aria-hidden="true">🌶️☘️</span>
             <span class="marca-texto">Chili <span>Clover</span></span>
         </a>
@@ -25,7 +34,6 @@
         </nav>
     </header>
 
-    
     <main>
         <!-- INICIO: presentación del negocio y promoción principal -->
         <section class="portada" id="portada">
@@ -261,6 +269,24 @@
             <p>Los datos que escribas en el formulario se muestran como parte de una demostración escolar. Esta versión no cuenta con un sistema propio para guardar o administrar datos. Antes de publicar la página y recopilar información real, la persona responsable del negocio deberá definir y publicar un aviso de privacidad adecuado.</p>
         </section>
     </main>
-    
+
+    <!-- Pie de página con enlaces externos y anclas a otras secciones -->
+    <footer class="pie">
+        <div>
+            <a class="marca marca-pie" href="#inicio"><span class="marca-icono">🌶️☘️</span><span class="marca-texto">Chili <span>Clover</span></span></a>
+            <p>¡Que la suerte te traiga aquí!</p>
+        </div>
+        <div class="enlaces-pie">
+            <a href="#menu">Ver menú</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#privacidad">Aviso de privacidad</a>
+            <!-- Sustituir el enlace de ejemplo por el perfil oficial, si existe -->
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram (enlace de ejemplo)</a>
+        </div>
+        <p class="copyright">Proyecto escolar de HTML y CSS · Chili Clover</p>
+    </footer>
+
+    <!-- Botón flotante para acceder rápidamente a WhatsApp -->
+    <a class="whatsapp-flotante" href="https://wa.me/521000000000?text=Hola%20Chili%20Clover%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener" aria-label="Contactar a Chili Clover por WhatsApp">WA</a>
 </body>
 </html>
