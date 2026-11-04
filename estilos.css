@@ -1,3 +1,125 @@
 /* =========================================================
    CHILI CLOVER - HOJA DE ESTILOS
    ========================================================= */
+
+/* Variables para reutilizar los colores oficiales del proyecto */
+:root {
+    --verde: #2e6635;
+    --verde-oscuro: #204b27;
+    --rojo: #c22026;
+    --crema: #fdf6e3;
+    --beige: #efe3c6;
+    --texto: #2d2b25;
+    --blanco: #ffffff;
+    --sombra: 0 10px 30px rgba(45, 43, 37, 0.10);
+}
+
+/* Hace que los tamaños incluyan rellenos y bordes para facilitar los cálculos */
+* {
+    box-sizing: border-box;
+}
+
+/* Desplazamiento suave al pulsar los enlaces que llevan a otra sección */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+/* Estilos generales de toda la página */
+body {
+    margin: 0;
+    background: var(--crema);
+    color: var(--texto);
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Los títulos usan Chewy para conservar el estilo juvenil de la marca */
+h1, h2, h3 {
+    font-family: "Chewy", "Trebuchet MS", cursive;
+    font-weight: 400;
+    line-height: 1.15;
+    margin-top: 0;
+}
+
+h1 { font-size: clamp(2.8rem, 6vw, 5.2rem); }
+h2 { font-size: clamp(2rem, 4vw, 3.2rem); }
+h3 { font-size: 1.45rem; }
+
+p { margin-top: 0; }
+
+a {
+    color: var(--verde);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Encabezado y navegación */
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 16px 6%;
+    background: var(--crema);
+    border-bottom: 1px solid rgba(46, 102, 53, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.marca {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--texto);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.marca-icono { font-size: 1.8rem; }
+.marca-texto { font-family: "Chewy", cursive; font-size: 1.7rem; }
+.marca-texto span { color: var(--verde); }
+
+.navegacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px 22px;
+}
+
+.navegacion a {
+    color: var(--texto);
+    font-weight: 700;
+    font-size: 0.93rem;
+}
+
+.navegacion a:hover { color: var(--rojo); }
+
+/* Portada principal con dos columnas que se acomodan en pantallas pequeñas */
+.portada {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 36px;
+    padding: 70px 8%;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 85% 15%, rgba(194, 32, 38, 0.10), transparent 28%),
+        linear-gradient(135deg, var(--crema), #f5e9cc);
+}
+
+.portada-contenido { max-width: 650px; }
+.portada h1 { color: var(--verde-oscuro); margin-bottom: 18px; }
+.portada-texto { font-size: 1.1rem; max-width: 540px; }
+
+.etiqueta {
+    color: var(--rojo);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
