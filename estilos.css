@@ -470,3 +470,56 @@ tbody tr:hover { background: #f4e8cb; }
     box-shadow: var(--sombra);
 }
 .whatsapp-flotante:hover { text-decoration: none; transform: scale(1.05); }
+
+/* Ajustes para tabletas */
+@media (max-width: 900px) {
+    .encabezado { align-items: flex-start; flex-direction: column; }
+    .navegacion { justify-content: flex-start; }
+    .portada { padding: 55px 6%; gap: 20px; }
+    .portada-ilustracion { min-height: 270px; }
+    .burbuja { width: 85px; height: 85px; font-size: 2.7rem; }
+    .sello { width: 125px; height: 125px; font-size: 1.5rem; }
+    .productos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .galeria { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .seccion { padding: 60px 6%; }
+}
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+    html { scroll-padding-top: 140px; }
+    .encabezado { padding: 13px 5%; gap: 10px; }
+    .marca-texto { font-size: 1.45rem; }
+    .navegacion { gap: 8px 14px; }
+    .navegacion a { font-size: 0.84rem; }
+    .portada {
+        grid-template-columns: 1fr;
+        padding: 45px 6% 55px;
+    }
+    .portada h1 { font-size: 3.3rem; }
+    .portada-ilustracion { min-height: 230px; margin: 0 8px; }
+    .burbuja { width: 72px; height: 72px; font-size: 2.2rem; }
+    .burbuja-tres { width: 58px; height: 58px; font-size: 1.8rem; }
+    .sello { width: 110px; height: 110px; font-size: 1.35rem; }
+    .promo { grid-template-columns: 1fr auto; margin: 0 4%; padding: 22px; }
+    .promo h2 { font-size: 2rem; }
+    .precio-promo { font-size: 3.1rem; }
+    .nosotros, .contacto { grid-template-columns: 1fr; gap: 28px; }
+    .seccion { padding: 48px 6%; }
+    .mision-vision { grid-template-columns: 1fr; padding: 0 6% 48px; }
+    .productos { grid-template-columns: 1fr; }
+    .producto p { min-height: 0; }
+    .galeria { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .foto { min-height: 170px; padding: 14px; }
+    .foto span { font-size: 3.3rem; }
+    .tabla-contenedor { padding: 16px; }
+    .mapa iframe { height: 280px; }
+    .pie { grid-template-columns: 1fr; padding: 30px 6% 18px; }
+    .enlaces-pie { justify-content: flex-start; }
+    .copyright { grid-column: auto; }
+}
+
+/* Reduce las animaciones para las personas que así lo prefieren en su dispositivo */
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition-duration: 0.01ms !important; }
+}
