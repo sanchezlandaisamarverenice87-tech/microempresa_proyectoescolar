@@ -21,6 +21,7 @@ ELEMENTOS QUE SE INCLUYEN
 - Formulario: permite escribir nombre, correo y mensaje. En esta versión es demostrativo y no envía ni almacena los datos.
 - Iframe: incrusta un mapa de Google dentro de la página.
 - Multimedia: las ilustraciones/emoji son provisionales; se deben incorporar fotografías reales de galería.
+- Diseño responsivo: las reglas @media de estilos.css ajustan columnas, navegación y tamaños para pantallas pequeñas.
 
 NOTA SOBRE EL NIVEL DEL PROYECTO
 La página usa HTML y CSS básicos, por eso, el formulario no envía mensajes por sí solo. El botón de WhatsApp funcionará por completo cuando 
